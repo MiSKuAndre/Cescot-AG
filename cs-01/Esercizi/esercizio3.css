@@ -1,0 +1,63 @@
+/*COLORA DI ROSSO TUTTI GLI ELEMENTI DI TIPO SPAN*/
+span {
+    color: red;
+}
+
+/*COLORA DI BLU TUTTI GLI SPAN CONTENUTI ALL'INTERNO DI UN PARAGRAFO*/
+p span {
+    color: blue;
+}
+
+/*COLORA DI VERDE <span class="classe-1">semper vel</span> DELLA SEZIONE 1*/
+#sezione-1 > p.classe-1 > span.classe-1 {
+    color: green;
+}
+
+/*COLORA DI VIOLA IL PARAGRAFO DI CLASSE 1 DELLA SEZIONE 2*/
+.sezione-2 p.classe-1 {
+    color: purple;
+}
+
+/*COLORA L'ELEMENTO A DI GIALLO QUANDO L'UTENTE CI PASSA SOPRA CON IL MOUSE*/
+a:hover {
+    color: yellow;
+}
+
+/*COLORA IL PARAGRAFO DI SEZIONE 1 DELLA CLASSE 2 DI ARANCIONE QUANDO CI PASSI SOPRA CON IL MOUSE*/
+#sezione-1 > p.classe-2:hover {
+    color: orange;
+}
+
+/*COLORA IL PRIMO PARAGRAFO DI SEZIONE 2 */
+/*TUTTE LE SOLUZIONI SEGUENTI SONO CORRETTE*/
+.sezione-2 > p:not(.classe-1) {
+    color: pink;
+}
+.sezione-2 > p:first-child {
+    color:pink;
+}
+.sezione2 > p:nth-child(1) {
+    color:pink;
+}
+
+/*
+PER PRENDERE TUTTI I "FIGLI" PARI
+.sezione2 > p:nth-child(2n) {
+    color:pink;
+}
+PER PRENDERE TUTTI I "FIGLI" DISPARI
+.sezione2 > p:nth-child(2n+1) {
+    color:pink;
+}
+*/
+
+/*COLORA LA LISTA COME SCRITTO NEL FILE HTML*/
+ul.classe-2 > li:nth-child(2n) {
+    color:green;
+} 
+ul.classe-2 > li:nth-child(2n+1) {
+    color:red;
+}
+ul.classe-2 > li:first-child {
+    color:yellow;
+}

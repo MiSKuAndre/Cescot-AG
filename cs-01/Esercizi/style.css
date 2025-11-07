@@ -1,0 +1,49 @@
+/*questo è un commento css*/
+/*indichiamo che tutti i paragrafi devono essere colorati di blu*/
+p {
+    color: blue;
+}
+
+/*Tutti gli elementi che hanno la classe "testo-rosso" */
+.testo-rosso {
+    color: red;
+}
+
+/*l'elemento con ID "sezione-2"*/
+#sezione-2 {
+    color: purple;
+}
+
+/*tutti gli elementi di tipo A che hanno la classe "testo-rosso"*/
+a.testo-rosso{
+    color: brown;
+}
+
+/*tutti gli elementi di tipo A che hanno le classi "testo-rosso" e "testo-marrone"*/
+a.testo-rosso.testo-marrone {
+    color: darkred;
+}
+
+/* ID=100 CLASSE=010 TAG=001 */
+
+/*tutti gli elementi di tipo A racchiusi all'interno di un elemento con classe "testo principale"*/
+.testo-principale a {
+    color: yellow;
+}
+
+/*tutti gli elementi di tipo A racchiusi all'interno di un paragrafo con classe "testo principale"*/
+p.testo-principale a {
+    color: yellow;
+}
+
+/*tutti gli elementi figli di un paragrafo*/
+p > * {
+    color: green;
+}
+
+/*Seleziona l'elemento di tipo A su cui l'utente ha il mouse*/
+a:hover {
+    color:red;
+}
+
+/**/
