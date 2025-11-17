@@ -1,0 +1,22 @@
+div > *:nth-child(1) {background-color: yellow;}
+div > *:nth-child(2) {background-color: orange;}
+div > *:nth-child(3) {background-color: red;}
+
+div.es1 > * {
+    display: flex;
+    display: inline-block;
+    width: 200px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.es3 > * {
+    display: flex;
+    display: inline-block;
+    width: 200px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    
+}
