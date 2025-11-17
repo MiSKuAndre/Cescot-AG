@@ -47,3 +47,42 @@ a:hover {
 }
 
 /**/
+/*Regole CSS base*/
+body{
+    font-size: 16px; /*altezza del testo espressa in pixel*/
+}
+
+p {
+    color: #141414;; /*colore del testo*/
+    background-color: rgb(233, 233, 233); /*sfondo del testo*/
+    font-family: Arial, Verdana, sans-serif; /*modifica il font del testo*/
+    font-size: 1.5em; /*altezza del testo moltiplicata per 1,5*/
+    font-weight: 400; /*larghezza del testo*/
+    font-style: italic; /*applicare il corsivo al testo*/
+    text-decoration: underline; /*"decorare" il testo con una sottolineatura*/
+    text-align:left; /*allineatura del testo*/
+    text-transform:uppercase; /*modifica tutto il testo in maiuscolo*/
+
+}
+
+p span{
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none; /*togliere i "pallini" dall'elenco ordinato*/
+}
+
+div#spazi {
+    background-color: pink;
+    margin: 50px; /*dal bordo della pagina*/
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    padding: 30px; 
+    border:4px solid green; /*aggiungere un bordo al paragrafo*/
+        border-width: 4px;
+        border-style: solid;
+        border-color: green;
+}

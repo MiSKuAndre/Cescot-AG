@@ -1,0 +1,52 @@
+div > *:nth-child(1) {background-color: orange;}
+div > *:nth-child(2) {background-color: rgb(207, 142, 21);}
+div > *:nth-child(3) {background-color: red;}
+div > *:nth-child(4) {background-color: brown;}
+
+div.inline > * {
+    display: inline;
+}
+
+div.block > * {
+    display: block;
+}
+
+div.inline-block > * {
+    display: inline-block;
+    width: 50px;
+}
+
+.none {
+    display: none; /*nasconde un contenuto*/
+}
+
+.hidden {
+    visibility: hidden; /*lo rende trasparente*/
+}
+
+.opacity {
+    opacity: 0; /*regola l'opacità del contenuto*/
+}
+
+.flex {
+    background-color: pink;
+    display: flex;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.justify-flex-start {justify-content: flex-start;}
+.justify-center {justify-content: center;}
+.justify-flex-end {justify-content: flex-end;}
+.justify-evenly {justify-content: space-evenly;}
+.justify-around {justify-content: space-around;}
+.justify-between {justify-content: space-between;}
+.direction-reverse {
+    flex-direction: row-reverse;
+}
+
+.align-start{align-items: flex-start;}
+.align-center{align-items: center;}
+.align-end{align-items: flex-end;}

@@ -31,7 +31,7 @@ a:hover {
 /*COLORA IL PRIMO PARAGRAFO DI SEZIONE 2 */
 /*TUTTE LE SOLUZIONI SEGUENTI SONO CORRETTE*/
 .sezione-2 > p:not(.classe-1) {
-    color: pink;
+    color:pink;
 }
 .sezione-2 > p:first-child {
     color:pink;
