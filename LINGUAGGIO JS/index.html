@@ -16,6 +16,39 @@
         
         <p class="figlio">Figlio esterno</p>
 
+        <button style="position: absolute" id="click-me-button">CLICCAMI</button>
+
+        <form action="#" method="post">
+            <input type="text" placeholder="" value="Valore" required disabled/><br/> <!--placeholder si mette per indicare un esempio, value compila il campo, required rende il campo obbligatorio da compilare, disabled lo rende disattivato-->
+            <input type="email" placeholder="a@b.it"/><br/> 
+            <input id="password" type="password" placeholder="password"/><br/> 
+            <button id="show-password">
+            <span>Mostra</span> la password
+            </button>
+            <br/> 
+            <input type="tel" placeholder="3451133333"/><br/> 
+            <input type="number" placeholder="num"/><br/> 
+            <input type="date" placeholder=""/><br/> 
+            <input type="file" placeholder=""/><br/> 
+            <input type="time" placeholder=""/><br/> 
+            <input type="radio" name="radio-1" value="val-1"/>Valore 1<br/>   <!--per renderli esclusivi bisogna mettere lo stesso name e un value diverso-->
+            <input type="radio" name="radio-1" value="val-2"/>Valore 2<br/> 
+            <input type="checkbox"/>Seleziona la casella per...<br/> 
+            <input type="time" placeholder=""/><br/> 
+
+            <select>
+                <option value="1">Valore 1</option>
+                <option value="2">Valore 2</option>
+            </select><br/> 
+
+            <textarea></textarea>
+
+            <button type="submit"> <!--accetta il contenuto-->
+                Invia
+            </button>    
+            
+            
+        </form>
         <script src="script.js"></script>
     </body>
 </html>

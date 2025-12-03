@@ -180,3 +180,55 @@ console.log(lista.getElementsByClassName('figlio')); // 1 figlio
 // Inserisci testo semplice nell'elemento
 lista.innerText = "<li>1</li><li class='figlio'>2</li>";
 console.log(lista.getElementsByClassName('figlio')); // 0 figli
+
+//Calcola la media dei voti
+var voti = [4, 6, 7, 8, 6, 8]; 
+var somma = 0;
+for (let i=0; i < voti.length; i++) {
+    somma += voti[i];
+}
+console.log("Media = " + (somma / voti.lenght));
+
+//trovare un numero dato in input all'interno di un array
+//var numero = window.prompt("Inserisci un numero");
+var elementi = [1, 2, 3, 4, 6, 7, 8, 9];
+let i=0;
+let trovato=false;
+
+while (!trovato && i<elementi.lenght) {
+    if (numero==elementi[i]) {
+        trovato = true;
+    }
+    i++;
+}
+
+if (trovato) {
+    console.log("Elemento trovato");
+} else {
+    console.log("Elemento non trovato");
+}
+
+//array e oggetti
+var array=[1, 2, 3, 4, 5];
+var oggetto = {
+    nome: "Luca",
+    cognome: "Rossi"
+};
+
+//Ciclo for of
+for (valore of array) {
+    console.log(valore); //stampa tutti gli ELEMENTI dell'array, gli elementi devono essere ITERABILI
+}
+
+//Ciclo for in
+for(chiave in oggetto) {
+    console.log(chiave); //stampa tutte le CHIAVI dell'oggetto
+}
+
+//Eventi
+
+var clickMeButton = document.getElementById("click-me-button");
+clickMeButton.addEventListener('mouseenter', function(){
+    clickMeButton.style.top = Math.random() * 100 + "%";
+    clickMeButton.style.left = Math.random() * 100 + "%";
+});
